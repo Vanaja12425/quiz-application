@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         h1{
+        text-align: center;
+    }
+    h2{
+        margin: 10px;
+        border-radius: 20px;
+        width: 700px;
+        background-image: linear-gradient(45deg,rgb(59, 219, 59) 50%,rgb(241, 17, 148));
+        padding:20px 10px;
+        font-size: 50px;
+    }
+    h4{
+        font-size: 30px;
+        margin: 50px;
+        width: 500px;
+        text-align: center;
+    }
+    p{
+        border-radius: 30px;
+        align-items: center;
+        padding:40px ;
+        margin-top: 0px;
+        margin: 50px;
+        width: 800px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: rgb(16, 203, 236);
+    }
+    body{
+        background-image: linear-gradient(magenta 50%,rgb(13, 250, 33));
+        margin-inline-start: 250px;
+        border: 100px;
+        flex-wrap: wrap;
+    }
+    ul{
+        font-size: 20px;
+        padding: 30px;
+        margin: 20px;
+        width: 700px;
+        background-image: linear-gradient(skyblue,yellow);
+        
+    }
+    ol{
+        font-size: 20px;
+        padding: 30px;
+        margin: 20px;
+        width: 700px;
+        background-image: linear-gradient(skyblue,yellow);
+        margin-top: -900px;
+    }
+
+    ul>li{
+        padding: 20px;
+    }
+    body>a{
+        text-decoration: none;
+        padding: 5px 20px;
+        border: 10px;
+        margin: 50px;
+        background-color: aqua;
+        font-size: 30px;
+        border-radius: 10px;
+    }
+    body>img{
+        height: 500px;
+        width: 500px;
+        text-align: right;
+        left: 80%;
+        margin-inline-start: 800px;
+        background-image: linear-gradient(chartreuse,orange);
+    }
+    iframe{
+        margin-inline-start: 800px;
+        height: 400px;
+        width: 700px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Introduction to MySQL</h1>
+    <p>MySQL is a very popular open-source relational database management system (RDBMS).</p>
+    <h2>What is MySQL?</h2>
+    <img src="./icons8-sql-48.png"/>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Cz3WcZLRaWc?si=LcSFNjH84J9MrLgj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <ol>
+        <li>MySQL is a relational database management system</li>
+        <li>MySQL is open-source</li>
+        <li>MySQL is free</li>
+        <li>MySQL is ideal for both small and large applications</li>
+        <li>MySQL is very fast, reliable, scalable, and easy to use</li>
+        <li>MySQL is cross-platform</li>
+        <li>MySQL is compliant with the ANSI SQL standard</li>
+        <li>MySQL was first released in 1995</li>
+        <li>MySQL is developed, distributed, and supported by Oracle Corporation</li>
+        <li>MySQL is named after co-founder Ulf Michael "Monty" Widenius's daughter: My</li>
+    </ol>
+    <h2>Who Uses MySQL?</h2>
+    <ul>
+        <li>Huge websites like Facebook, Twitter, Airbnb, Booking.com, Uber, GitHub, YouTube, etc.</li>
+        <li>Content Management Systems like WordPress, Drupal, Joomla!, Contao, etc.</li>
+        <li>A very large number of web developers around the world</li>
+    </ul>
+    <h2>Show Data On Your Web Site</h2>
+    <h4>To build a web site that shows data from a database, you will need:</h4>
+    <ul>
+        <li>An RDBMS database program (like MySQL)</li>
+        <li>A server-side scripting language, like PHP</li>
+        <li>To use SQL to get the data you want</li>
+        <li>To use HTML / CSS to style the page</li>
+    </ul>
+    <h2>What is SQL?</h2>
+    <p>SQL is the standard language for dealing with Relational Databases.
+
+        <br></br>SQL is used to insert, search, update, and delete database records.</p>
+    <h2>How to Use SQL</h2>
+    <p>The following SQL statement selects all the records in the "Customers" table:
+
+        <br></br>Example:
+       <br></br> SELECT * FROM Customers;
+        </p>
+    <h2>Keep in Mind That...</h2>
+    <p>SQL keywords are NOT case sensitive: select is the same as SELECT
+        <br></br>In this tutorial we will write all SQL keywords in upper-case.
+    </p>
+    <h2>Semicolon after SQL Statements?</h2>
+    <p>Some database systems require a semicolon at the end of each SQL statement.
+
+        <br></br>Semicolon is the standard way to separate each SQL statement in database systems that allow more than one SQL statement to be executed in the same call to the server.
+        
+        <br></br>In this tutorial, we will use semicolon at the end of each SQL statement.
+    </p>
+    <h2>Some of The Most Important SQL Commands</h2>
+    <ul>
+        <li>SELECT - extracts data from a database</li>
+        <li>UPDATE - updates data in a database</li>
+        <li>DELETE - deletes data from a database</li>
+        <li>INSERT INTO - inserts new data into a database</li>
+        <li>CREATE DATABASE - creates a new database</li>
+        <li>ALTER DATABASE - modifies a database</li>
+        <li>CREATE TABLE - creates a new table</li>
+        <li>ALTER TABLE - modifies a table</li>
+        <li>DROP TABLE - deletes a table</li>
+        <li>CREATE INDEX - creates an index (search key)</li>
+        <li>DROP INDEX - deletes an index</li>
+    </ul>
+    <a href="./subjects.html">Back</a>
+    <a href="./subjects.html">Next</a>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        text-align:center;
+        color:green;
+        text-shadow:5px 5px 5px ;
+        font-style:italic;
+        animation: fontSizeIncrease 3s;
+    }
+    label{
+        font-size:30px;
+        padding: 20px 20px;
+        font-style:italic;
+        font-weight:bold;
+    }
+    input{
+        font-style:italic;
+        padding: 20px;
+        background-color: aqua;
+    }
+    fieldset{
+        flex-wrap: wrap;
+        align-items: center;
+        border-radius:40px;
+        border-color:magenta;
+        border-width: 10px;
+        background-image:radial-gradient(magenta,orange,yellow);
+        width:600px;
+        height: 500px;
+        text-align: center;
+        animation-name:slide;
+        animation-duration:2s;
+        animation-iteration-count:2;
+        animation-direction:alternate-reverse;
+        }
+        body{
+            background-color: aquamarine;
+            padding:200px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        @keyframes slide{
+            from{
+                transform:translateY(-500px));
+            }
+            to{
+                transform:translate(0px);
+            }
+        }
+        @keyframes fontSizeIncrease {
+        from {
+          transform: scale(0);
+        }
+        to {
+          transform: scale(2);
+        }
+      }
+      fieldset>a{
+        flex-wrap: wrap;
+        font-size: 20px;
+        padding: 10px 10px;
+        text-decoration: none;
+        border:3px solid black ;
+        background-color: aqua;
+      }
+      body>form>fieldset{
+        flex-wrap: wrap;
+        margin-inline-start: 500px;
+      }
+</style>
+<body>
+    <form>
+        <fieldset action="">
+            <h1>Sign up</h1>
+           <label for="name">Name:</label>
+           <input type="text" id="name" required placeholder="Enter your name"/>
+           <br></br>
+           <label for=" ">Email:</label>
+           <input type="email" required placeholder="abc@123"/><br></br>
+           <label for=" " >Password:</label>
+           <input type="password" placeholder="........."/><br></br>
+           <label for="">DOB:</label>
+           <input type="date"/><br></br>
+           <a href="./project1.html">submit</a>
+           <a href="./project.html">Cancel</a>
+        </fieldset>
+    </form>
+</body>
+</html>

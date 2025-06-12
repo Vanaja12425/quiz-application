@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            font-size: 40px;
+            font-style: italic;
+            font-weight: bold;
+            background-color: magenta;
+            border-radius: 20px;
+            flex-wrap: wrap;
+        } 
+        body{
+            background-color:rgb(20, 167, 159);
+        }
+        main>section{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            animation: move 2s;
+            animation-iteration-count: 2;
+        }
+        main>section>div{
+            height: 600px;
+            width: 500px;
+            margin: 20px;
+            background-image: linear-gradient(45deg,rgb(255, 192, 245)50%,rgb(10, 169, 231));
+            padding: 10px px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        main>section>div>img{
+            animation:changesize 2s;
+        }
+        @keyframes move{
+            0%{
+                transform: translateX(-1500px);
+            }
+            100%{
+                transform: translate(0px);
+            }
+        }
+        @keyframes changesize{
+            0%{
+                transform: scale(0);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+        main>section>div>a{
+            text-decoration: none;
+            font-size: 40px;
+        }
+        body>a{
+            text-decoration: none;
+            background-color: rgb(0, 255, 13);
+            font-style: italic;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px;
+            padding: 20px 40px;
+            border-radius: 10px;
+        }
+        p{
+            text-align: center;
+            font-size: 50px;
+            font-weight: bold;
+            text-shadow: 5px 5px red;
+        }
+        nav>ol{
+            padding:30px 100px;
+            display:flex;
+            flex-direction: row;
+            background-image: linear-gradient(chartreuse 50%,rgb(13, 250, 33));
+            justify-content: space-around;
+            align-items: end;
+            text-align: center;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+        nav>ol>li>a{
+            padding: 10px 20px;
+            margin: 10px;
+            text-decoration: none;
+            font-style: italic;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+            text-align: center;
+            flex-grow: 1;
+            background-color: pink;
+        }
+        nav>ol>li>a{
+            text-decoration: none;
+            font-size: 30px;
+            border-radius: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <p>Online Quiz test</p>
+    <nav>
+        <ol>
+            <li><a href="./project.html">Home</a></li>
+            <li><a href="./About.html ">About</a></li>
+            <li><a href="./subjects.html">subjects</a></li>
+            <li><a href="./Registration.html ">Login</a></li>
+        </ol>
+    </nav>
+    <h1>Information about subjects</h1>
+
+</body>
+<main>
+    <section>
+        <div>
+            <img src="./icons8-java-188.png" height="500px" width="500px"/>
+            <a href="./javai.html">Java</a>
+        </div>
+        <div>
+            <img src="./icons8-python-48.png" height="500px" width="500px"/>
+            <a href="./pythont.html">Python</a>
+        </div>
+        <div>
+            <img src="./icons8-c++-144.png" height="500" width="500"/>
+            <a href="./c++i.html">C++</a>
+        </div>
+        <div>
+            <img src="./icons8-html-5-48.png" height="500" width="500"/>
+            <a href="./htmli.html">DBMS</a>
+        </div>
+        <div>
+            <img src="./icons8-sql-48.png" height="500" width="500"/>
+            <a href="./mysqli.html">MySQL</a>
+        </div>
+    </section>
+</main>
+<a href="./project.html">Back</a>
+</html>

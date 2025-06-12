@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+        text-align: center;
+    }
+    h2{
+        margin: 10px;
+        border-radius: 20px;
+        width: 500px;
+        background-image: linear-gradient(45deg,rgb(59, 219, 59) 50%,rgb(241, 17, 148));
+        padding:20px 10px;
+        font-size: 50px;
+    }
+    h3{
+        font-style: italic;
+        font-weight: bold;
+        font-size: 40px;
+        width: 500px;
+        border-radius: 60px;
+        padding: 10px;;
+        background-image: linear-gradient(45deg,rgb(59, 219, 59) 50%,rgb(241, 17, 148));
+    }
+    h4{
+        font-size: 30px;
+        margin: 50px;
+        width: 500px;
+        text-align: center;
+    }
+    p{
+        border-radius: 30px;
+        align-items: center;
+        padding:40px ;
+        margin-top: 0px;
+        margin: 50px;
+        width: 800px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: rgb(16, 203, 236);
+    }
+    body{
+        background-image: linear-gradient(magenta 50%,rgb(13, 250, 33));
+        margin-inline-start: 250px;
+        flex-wrap: wrap;
+        border: 300px;
+    }
+    ul{
+        font-size: 20px;
+        padding: 30px;
+        margin: 20px;
+        width: 700px;
+        background-image: linear-gradient(skyblue,yellow);
+    }
+    ol{
+        font-size: 20px;
+        padding: 30px;
+        margin: 20px;
+        width: 600px;
+        background-image: linear-gradient(skyblue,yellow);
+        margin-top: -900px;
+    }
+    iframe{
+        margin-inline-start:800px ;
+    }
+    body>img{
+        height: 500px;
+        width: 500px;
+        text-align: right;
+        left: 80%;
+        border-radius: 10px;
+        flex-wrap: wrap;
+        margin-inline-start: 800px;
+        background-image: linear-gradient(chartreuse,orange);
+    }
+    ul>li{
+        padding: 20px;
+    }
+    body>a{
+        text-decoration: none;
+        padding: 5px 20px;
+        border: 10px;
+        margin: 50px;
+        background-color: aqua;
+        font-size: 30px;
+        border-radius: 10px;
+    }
+    h5{
+        font-size: 30px;
+        margin-inline-start: 250px;
+    }
+    h6{
+        margin-inline-start: 300px;
+        font-size: 30px;
+    }
+    div{
+        font-size: 40px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Java Introduction</h1>
+    <h2>What is Java?</h2>
+    <p>Java is a popular programming language, created in 1995.
+
+    <br></br>It is owned by Oracle, and more than 3 billion devices run Java.</p>
+    <h3>It is used for:</h3>
+    <img src="./image.png"/>
+    <iframe width="660" height="400" src="https://www.youtube.com/embed/drQK8ciCAjY?si=vbLg547gXzvmYLQ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <ol>
+        <li>Mobile applications (specially Android apps)</li>
+        <li>Desktop applications</li>
+        <li>Web applications</li>
+        <li>Web servers and application servers</li>
+        <li>Games</li>
+        <li>Database connection</li>
+        <li>And much, much more!</li>
+    </ol>
+    <h2>Why Use Java?</h2>
+    <ul>
+        <li>Java works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc.)</li>
+        <li>It is one of the most popular programming languages in the world</li>
+        <li>It has a large demand in the current job market</li>
+        <li>It is easy to learn and simple to use</li>
+        <li>It is open-source and free</li>
+        <li>It is secure, fast and powerful</li>
+        <li>It has huge community support (tens of millions of developers)</li>
+        <li>Java is an object oriented language which gives a clear structure to programs and allows code to be reused, lowering development costs</li>
+        <li>As Java is close to C++ and C#, it makes it easy for programmers to switch to Java or vice versa</li>
+    </ul>
+    <h2>Java Syntax</h2>
+    <p>In the previous chapter, we created a Java file called Main.java, and we used the following code to print "Hello World" to the screen:</p>
+    <h3>Main.java</h3>
+    <h4>public class Main {</h4>
+        <h5>  public static void main(String[] args) {</h5>
+            <h6>    System.out.println("Hello World");<br></br> }<br></br>}</h6>
+            <h2>Example explained</h2>
+            <p>Every line of code that runs in Java must be inside a class. And the class name should always start with an uppercase first letter. In our example, we named the class Main.
+
+                <br></br>Note: Java is case-sensitive: "MyClass" and "myclass" has different meaning.
+                
+                <br></br>The name of the java file must match the class name. When saving the file, save it using the class name and add ".java" to the end of the filename. To run the example above on your computer, make sure that Java is properly installed: Go to the Get Started Chapter for how to install Java. The output should be:
+                
+                <br></br>Hello World
+                </p>
+                <h2>The main Method</h2>
+                <div>The main() method is required and you will see it in every Java program:</div>
+                <h4>public static void main(String[] args)</h4>
+                <p>Any code inside the main() method will be executed. Don't worry about the keywords before and after it. You will get to know them bit by bit while reading this tutorial.
+
+                    <br></br>For now, just remember that every Java program has a class name which must match the filename, and that every program must contain the main() method.</p>
+                    <h2>System.out.println()</h2>
+                    <div>Inside the main() method, we can use the println() method to print a line of text to the screen:</div>
+                    <h4>public static void main(String[] args) {</h4>
+                        <h5>  System.out.println("Hello World");<br></br>}</h5>
+            
+            <p>Note: The curly braces {} marks the beginning and the end of a block of code.
+
+                <br></br>System is a built-in Java class that contains useful members, such as out, which is short for "output". The println() method, short for "print line", is used to print a value to the screen (or a file).
+                
+                <br></br>Don't worry too much about how System, out and println() works. Just know that you need them together to print stuff to the screen.
+                
+                <br></br>You should also note that each code statement must end with a semicolon (;).
+            </p>
+            <a href="./project.html">Back</a>
+            <a href="./subjects.html">Next</a>
+        </body>
+</html>
